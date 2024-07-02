@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: url("./img/direita_cima.png") no-repeat right top,
+    url("./img/esquerda_cima.png") no-repeat left top;
+}
+
+.header_preco_original {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: rgba(224, 69, 17, 0.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* deixar o footer em baixo */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: url("./img/direita_baixo.png") no-repeat right bottom,
+    url("./img/esquerda_baixo.png") no-repeat left bottom;
+}
